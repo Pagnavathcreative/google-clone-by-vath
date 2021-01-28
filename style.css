@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0;
+}
+.icon {
+  height: 20px;
+  opacity: 0.4;
+}
+.search-icon {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 0;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0;
+  margin: 0;
+}
+.input input {
+  width: 400px;
+  height: 45px;
+  border: 1px solid #cfcfcf;
+  border-left: 0;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  border-right: 0;
+}
+::-webkit-input-placeholder {
+  color: #333;
+}
+.key-record {
+  display: flex;
+  align-items: center;
+}
+.key {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0;
+  border-right: 0;
+  cursor: pointer;
+}
+.record {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cfcfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+}
+.search:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 5px;
+  border-radius: 25px;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.google-search,
+.content {
+  width: 130px;
+  height: 35px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c4043;
+  margin: 0 0.5em;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.google-search:hover,
+.content:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  border: 1px solid #cfcfcf;
+}
+.github {
+  padding: 1em 0;
+}
+.github a {
+  color: rgb(0, 132, 255);
+  text-decoration: none;
+  font-size: 14px;
+}
+@media (max-width: 650px) {
+  .input input {
+    width: 100%;
+  }
+}
